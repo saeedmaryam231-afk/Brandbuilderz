@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Brand Builders logo">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c5cff" />
+      <stop offset="100%" stop-color="#3ec7b2" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#07111f"/>
+  <rect x="5" y="5" width="54" height="54" rx="14" fill="url(#bg)" opacity="0.2"/>
+  <path d="M18 46V18h10.5c8.2 0 13.5 4.8 13.5 12.8 0 8.2-5.3 12.9-13.5 12.9H18zm9.6-7.7h1.4c4.2 0 6.7-2.3 6.7-6.1 0-4-2.5-6.1-6.7-6.1h-1.4v12.2z" fill="#edf5ff"/>
+  <path d="M32.5 18l11.5 28h-8.7l-1.8-4.7h-9.6l-1.8 4.7H14.5L26 18h6.5zm-2.2 17.4h3.4L31.2 25l-2.2 10.4z" fill="#edf5ff" opacity="0.92"/>
+</svg>
