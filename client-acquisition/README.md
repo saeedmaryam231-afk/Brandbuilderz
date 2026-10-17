@@ -5,7 +5,7 @@ Message: **"Google Ads that get US home service businesses more booked jobs."** 
 | Agent | Status | Lives in |
 |---|---|---|
 | 1. Lead Finder | built | `.claude/agents/lead-finder.md` |
-| 2. Outreach Drafter | not yet | |
+| 2. Outreach Drafter | built | `.claude/agents/outreach-drafter.md` |
 | 3. LinkedIn Content | not yet | |
 
 ## Running the Lead Finder
@@ -26,6 +26,14 @@ and has one specific, verifiable ad or landing-page issue.
 - `leads/leads.csv` holds the output. It's **gitignored** and blocked on Netlify, so lead data
   never ends up on GitHub or the live site. If you upload the site by zip or by hand,
   leave `client-acquisition/` out.
+
+## Drafting outreach (Agent 2)
+
+- `/draft-outreach` drafts an email, a LinkedIn note and follow-ups for every `new` lead.
+- Drafts go to `outreach/drafts-YYYY-MM-DD.md` (gitignored). Each lead has a research
+  check and an `[ ] Approved` box. Edit freely, send it yourself, then set the lead's
+  status to `sent` in `leads.csv`.
+- Lead status moves `new` → `drafted` (or `needs-contact`) → `sent` (set by you only).
 
 The `status` column starts as `new`. Agent 2 will read rows with `status=new`.
 Nothing is ever sent automatically.
