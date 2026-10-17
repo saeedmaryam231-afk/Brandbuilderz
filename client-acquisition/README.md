@@ -6,7 +6,7 @@ Message: **"Google Ads that get US home service businesses more booked jobs."** 
 |---|---|---|
 | 1. Lead Finder | built | `.claude/agents/lead-finder.md` |
 | 2. Outreach Drafter | built | `.claude/agents/outreach-drafter.md` |
-| 3. LinkedIn Content | not yet | |
+| 3. LinkedIn Content | built | `.claude/agents/linkedin-content.md` |
 
 ## Running the Lead Finder
 
@@ -34,6 +34,13 @@ and has one specific, verifiable ad or landing-page issue.
   check and an `[ ] Approved` box. Edit freely, send it yourself, then set the lead's
   status to `sent` in `leads.csv`.
 - Lead status moves `new` → `drafted` (or `needs-contact`) → `sent` (set by you only).
+
+## LinkedIn posts (Agent 3)
+
+- `/linkedin-posts` writes next week's Mon/Wed/Fri posts to `content/week-YYYY-MM-DD.md`
+  and logs topics in `content/posts-log.csv`, so nothing repeats within 8 weeks.
+- Add direction if you like, e.g. `/linkedin-posts focus on towing this week`.
+- Nothing gets posted. Approve, tweak, and post it yourself.
 
 The `status` column starts as `new`. Agent 2 will read rows with `status=new`.
 Nothing is ever sent automatically.
